@@ -30,7 +30,7 @@ class Calc {
         } else {
             throw new Exception("Используются одновременно разные системы счисления");
         }
-        if (num1 > 10 || num2 > 10) {
+        if (num1 > 20 || num2 > 20) {
             throw new Exception("Числа должны быть от 1 до 10");
         }
         int arabian = calc(num1, num2, oper);
@@ -66,7 +66,7 @@ class Calc {
 }
 class Roman {
         static String[] romanArray = new String[]{"0","I", "II", "III", "IV",
-                "V", "VI", "VII", "VIII", "IX", "X"
+                "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"
         };
 
     public static boolean isRoman(String val) {
