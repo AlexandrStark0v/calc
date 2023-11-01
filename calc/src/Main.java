@@ -30,7 +30,7 @@ class Calc {
         } else {
             throw new Exception("Используются одновременно разные системы счисления");
         }
-        if (num1 > 20 || num2 > 20) {
+        if (num1 > 10 || num2 > 10) {
             throw new Exception("Числа должны быть от 1 до 10");
         }
         int arabian = calc(num1, num2, oper);
@@ -66,7 +66,10 @@ class Calc {
 }
 class Roman {
         static String[] romanArray = new String[]{"0","I", "II", "III", "IV",
-                "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"
+                "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI","XXII","XXIII","XXIV","XXV","XXVI","XXVII","XXVIII","XXIX","XXX","XXXI","XXXII","XXXIII","XXXIV","XXXV",
+                "XXXVI","XXXVII","XXXVIII","XXXIX","XXXX","XXXXI","XXXXII","XXXXIII","XXXXIV","XXXXV","XXXXVI","XXXXVII","XXXXVIII","XXXXIX","L","LI","LII","LIII","LIV","LV","LVI","LVII","LVIII","LIX","LX","LXI","LXII","LXIII","LXIV","LXV","LXVI","LXVII","LXVIII",
+                "LXIX","LXX","LXXI","LXXII","LXXIII","LXXIV","LXXV","LXXVI","LXXVII","LXXVIII","LXXIX","LXXX","LXXXI","LXXXII","LXXXIII","LXXXIV","LXXXV","LXXXVI","LXXXVII","LXXXVIII","LXXXIX","LXXXX","LXXXXI","LXXXXII","LXXXXIII","LXXXXIV","LXXXXV","LXXXXVI","LXXXXVII","LXXXXVIII","LXXXXIX", "C"
+
         };
 
     public static boolean isRoman(String val) {
